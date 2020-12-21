@@ -53,30 +53,16 @@
                 <div class="col-md-9 address-info text-right">
                     <div class="info box">
                         <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="ti-map-alt"></i>
-                                </div>
-                                <div class="info">
-                                    <span>Address</span> California, TX 70240
-                                </div> 
-                            </li>
+                            
                             <li>
                                 <div class="icon">
                                     <i class="ti-email"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Email</span> Info@gmail.com
+                                    <span>Email</span> Info@proxynetgroup.com
                                 </div>
                             </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="ti-time"></i>
-                                </div>
-                                <div class="info">
-                                    <span>Openning Hours</span> Fri - Sun : 8:00 - 16:00
-                                </div>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -115,7 +101,7 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="contact"><a href="#"> Call <strong> +123 456 7890</strong></a></li>
+                        <li class="contact"><a href="#"> Call <strong> +234 7032647755</strong></a></li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -135,7 +121,7 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left" data-in="#" data-out="#">
                         <li class="dropdown">
-                            <a href="#" class="active" >Home</a>
+                            <a href="index.php"  >Home</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="index.html">Home Version One</a></li>
                                 <li><a href="index-2.html">Home Version Two</a></li>
@@ -155,7 +141,7 @@
                                 <li><a href="404.html">Error Page</a></li>
                             </ul> -->
                         </li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
                             <ul class="dropdown-menu">
@@ -172,21 +158,21 @@
                             </ul> -->
                         </li>
                         <li class="">
-                            <a href="#" class="">Clients</a>
+                            <a href="clients.php" class="">Clients</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
                             </ul> -->
                         </li>
                         <li class="">
-                            <a href="#" class="">Partners</a>
+                            <a href="partners.php" class="">Partners</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
                             </ul> -->
                         </li>
                           <li class="">
-                            <a href="#" class="">News</a>
+                            <a href="news.php" class="">News</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
@@ -204,7 +190,7 @@
                             </ul>
                         </li> -->
                         <li>
-                            <a href="contact.html">contact</a>
+                            <a href="contact.php">contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

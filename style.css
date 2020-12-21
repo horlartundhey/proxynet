@@ -5099,3 +5099,8 @@ Table of contents
     background: url(assets/img/preloader.gif) center no-repeat #fff;
     text-align: center;
   }
+
+  img.sizer {
+    width: 350px;
+    height: 294px;
+}

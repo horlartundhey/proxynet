@@ -130,7 +130,7 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                         <li class="dropdown">
-                            <a href="#" class="active" >Home</a>
+                            <a href="index.php" class="active" >Home</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="index.html">Home Version One</a></li>
                                 <li><a href="index-2.html">Home Version Two</a></li>
@@ -150,7 +150,7 @@
                                 <li><a href="404.html">Error Page</a></li>
                             </ul> -->
                         </li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
                             <ul class="dropdown-menu">
@@ -167,21 +167,21 @@
                             </ul> -->
                         </li>
                         <li class="">
-                            <a href="#" class="">Clients</a>
+                            <a href="clients.php" class="">Clients</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
                             </ul> -->
                         </li>
                         <li class="">
-                            <a href="#" class="">Partners</a>
+                            <a href="partners.php" class="">Partners</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
                             </ul> -->
                         </li>
                           <li class="">
-                            <a href="#" class="">News</a>
+                            <a href="news.php" class="">News</a>
                             <!-- <ul class="dropdown-menu">
                                 <li><a href="team-carousel.html">Team Carousel</a></li>
                                 <li><a href="team-grid.html">Team Grid</a></li>
@@ -199,7 +199,7 @@
                             </ul>
                         </li> -->
                         <li>
-                            <a href="contact.html">contact</a>
+                            <a href="contact.php">contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

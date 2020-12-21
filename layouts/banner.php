@@ -16,7 +16,7 @@
                                             <p data-animation="animated slideInDown">
                                             Sleek and very minimal in design, allowing businesses to display messages and presentations to customers and visitors.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -24,7 +24,26 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="item bg-cover" style="background-image: url(img/logitechvideo.jpg);">
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <div class="content">
+                                            <h4 data-animation="animated fadeInDown">Information Technology</h4>
+                                            <h1 data-animation="animated slideInLeft">Video Conferencing<span></span></h1>
+                                            <p data-animation="animated slideInDown">
+                                                Connect wherever and whenever to maximize efficiency in your meetings with our solutions. 
+                                            </p>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="item bg-cover" style="background-image: url(img/datasixth.jpeg);">
                     <div class="box-table shadow dark">
@@ -38,7 +57,7 @@
                                             <p data-animation="animated slideInDown">
                                             Your Data and critical assets need real-time protection we can give it to you. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +81,7 @@
                                             <p data-animation="animated slideInDown">
                                             Organize, Identify, Authenticate and Authorize groups, individuals securely from the cloud. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +102,7 @@
                                             <p data-animation="animated slideInDown">
                                             Monitoring Your Organization's entire IT infastructure and cloud based servers just got better. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -103,7 +122,7 @@
                                             <p data-animation="animated slideInDown">
                                             Rent Videowalls of various dimensions, screens with stands single display units and touch screens and Audio Systems,  for your events. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="rentals.php">Learn more <i class="fas fa-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +142,7 @@
                                             <p data-animation="animated slideInDown">
                                             We work with our customers to design a robust and scalable network infastructure, for efficiency and adequate productivity.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +162,7 @@
                                             <p data-animation="animated slideInDown">
                                             Our methods and experience with the most appropriate technologies means we get it done right on time and on budget. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +182,7 @@
                                             <p data-animation="animated slideInDown">
                                             Our methods and experience with the most appropriate technologies <br> means we get it done right on time and on budget. 
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -181,9 +200,9 @@
                                             <h4 data-animation="animated fadeInDown">Prevent CyberCrime</h4>
                                             <h1 data-animation="animated fadeInUp">ADVANCED PERSISTENT THREAT(APT)<span>ATTACK & ZERO-DAY PROTECTION</span></h1>
                                             <p data-animation="animated slideInDown">
-                                            Cybercriminals have figures out how to evade detection by bypassing traditional defences. Your network might be vulnerable.
+                                            Cybercriminals have figured out how to evade detection by bypassing traditional defences. Your network might be vulnerable.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="apt.php">Learn more <i class="fas fa-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>

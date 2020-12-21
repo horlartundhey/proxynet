@@ -210,13 +210,13 @@
                                 <img src="img/Logitech.jpg" alt="Thumb">
                             </div>
                             <div class="item">
-                                <img src="img/samsung1.jpg" alt="Thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb">
                             </div>
                             <div class="item">
                                 <img src="img/cisco.jpg" alt="Thumb">
                             </div>
                             <div class="item">
-                                <img src="img/fortinet.jpg" alt="Thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Fortinet_ha55ho.jpg" alt="Thumb">
                             </div>
                             <div class="item">
                                 <img src="img/fireeye.png" alt="Thumb">

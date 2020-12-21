@@ -27,7 +27,7 @@
                         <p>
                         Proxynet Communications Limited is a leading ICT Company Headquartered in Lagos, Nigeria playing in the African market space with business presence in Nigeria, Ghana, CIV, Cameroun, Gambia, and South Africa.
                         </p>
-                        <a class="btn btn-theme border btn-md" href="#">Learn More</a>
+                        <a class="btn btn-theme border btn-md" href="about.php">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -36,9 +36,9 @@
                 <div class="row">
                     <div class="col-md-6 thumb">
                         <div class="thumb-img">
-                            <img src="img/samsungb2b.png" alt="Thumb">
+                            <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296195/Samsungb2b_nkqguk.png" alt="Thumb">
                             <div class="video">
-                                <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-play-button">
+                                <a href="https://youtu.be/uEYIB2R4RPo" class="popup-youtube video-play-button">
                                     <i class="ti-control-play"></i>
                                 </a>
                             </div>
@@ -95,25 +95,11 @@
                                 <p>
                                 Effective communication defines today’s business landscape. Interaction with colleagues, clients, vendors...
                                 </p>
-                                <a class="btn circle btn-gray border btn-sm" href="cloud_security.php">Read More</a>
+                                <a class="btn circle btn-gray border btn-sm" href="systems-integration.php">Read More</a>
                             </div>
                         </div>
                         <!-- Single Itme -->
-                        <!-- Single Itme -->
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="img/signage.jpg" alt="Thumb">
-                                <i class="ti-blackboard"></i>
-                            </div>
-                            <div class="info">
-                                <h4>LFD - SMART SIGNAGE</h4>
-                                <p>
-                                A Revolution in outdoor and in-door HD Presentation.
-                                </p>
-                                <a class="btn circle btn-gray border btn-sm" href="smart_signage.php">Learn More</a>
-                            </div>
-                        </div>
-                        <!-- Single Itme -->
+                       
                         <!-- Single Itme -->
                         <div class="item">
                             <div class="thumb">
@@ -125,10 +111,11 @@
                                 <p>
                                 We ensure your computing environment is equipped with the latest in security, anti-virus and disaster recovery technologies...
                                 </p>
-                                <a class="btn circle btn-gray border btn-sm" href="#">Learn More</a>
+                                <a class="btn circle btn-gray border btn-sm" href="network-security.php">Learn More</a>
                             </div>
                         </div>
                         <!-- Single Itme -->
+
                         <!-- Single Itme -->
                         <div class="item">
                             <div class="thumb">
@@ -140,7 +127,22 @@
                                 <p>
                                 We are formidable in the design of Enterprise Software Applications (ESA) that can satisfy your business needs...
                                 </p>
-                                <a class="btn circle btn-gray border btn-sm" href="#">Learn More</a>
+                                <a class="btn circle btn-gray border btn-sm" href="enterprise.php">Learn More</a>
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/signage.jpg" alt="Thumb">
+                                <i class="ti-blackboard"></i>
+                            </div>
+                            <div class="info">
+                                <h4>LFD - SMART SIGNAGE</h4>
+                                <p>
+                                A Revolution in outdoor and in-door HD Presentation.
+                                </p>
+                                <!-- <a class="btn circle btn-gray border btn-sm" href="smart_signage.php">Learn More</a> -->
                             </div>
                         </div>
                         <!-- Single Itme -->
@@ -174,7 +176,7 @@
 
                     <p><strong>Operate:</strong> Every of our solution comes with a maintenance platform, as we plan, design, and build, we ensure you enjoy your I.T solution as well as help you evolve your needs.</p>
                     
-                    <a class="btn btn-theme border btn-md" href="#">Contact us Now!</a>
+                    <a class="btn btn-theme border btn-md" href="contact.php">Contact us Now!</a>
                 </div>
                 <div class="col-md-6 process-box">
                     <div class="process-items">
@@ -302,7 +304,7 @@
                             <!-- End Carousel Content -->                            
                         </div>
                          <br><br>
-                        <a class="btn btn-theme border btn-md" href="#">View More Projects!</a>
+                        <a class="btn btn-theme border btn-md" href="clients.php">View More Projects!</a>
                     </div>
                 </div>
             </div>
@@ -440,13 +442,13 @@
                                 <img src="img/Logitech.jpg" alt="Thumb">
                             </div>
                             <div class="item">
-                                <img src="img/samsung1.jpg" alt="Thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb">
                             </div>
                             <div class="item">
                                 <img src="img/cisco.jpg" alt="Thumb">
                             </div>
                             <div class="item">
-                                <img src="img/fortinet.jpg" alt="Thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Fortinet_ha55ho.jpg" alt="Thumb">
                             </div>
                             <div class="item">
                                 <img src="img/fireeye.png" alt="Thumb">
@@ -592,8 +594,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+                        
+        </div>    
+            
+    </div>    
     <!-- End Portfolio -->
 <?php
     require("layouts/footer.php");

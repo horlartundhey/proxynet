@@ -46,7 +46,7 @@
                                 <p>
                                     Proxynet's Security and Disaster Recovery (DR) team has a wealth of knowledge in the computer security and disaster recovery fields. From the SME to the multi-national corporation, we can provide consulting services and a customized solution to meet your business needs. The Security and DR Team prides itself on its ability to provide endto-end security solutions to protect your IT infrastructure.
                                 </p>
-                                <!-- <a class="btn circle btn-theme border btn-sm" href="#">Learn More <i class="ti-arrow-right"></i></a> -->
+                                <a class="btn circle btn-theme border btn-sm" href="network-security.php">Learn More <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -73,7 +73,8 @@
                                 <p>
                                 Proxynet Communications has in mind that networks must be flexible, tailored to meet communication needs, compliant with regulation and corporate governance and also aligned with industry standards. Most importantly, we know that networks should simply work - seamlessly facilitating your organizations’ changing communication needs. Through a comprehensive range of services, adaptable scale, and in-depth networking expertise, we keep organizations connected and communicating - through their networks.
                                 </p>
-                                <!-- <a class="btn circle btn-theme border btn-sm" href="#">Learn More <i class="ti-arrow-right"></i></a> -->
+
+                                <a class="btn circle btn-theme border btn-sm" href="system-integration.php">Learn More <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <!-- End Single Item --> 
@@ -96,7 +97,7 @@
                                 <p>
                                 Proxynet Communications designs, implements and supports Local area networks (LAN),Metropolitan area networks(MAN) and Wide area networks(WAN) focusing on delivering industry standards-based technologies that support the transition to higher-bandwidth networking. Also our Solutions strategy recognizes the need for solutions that address a number of key areas, including performance, manageability, productivity, speed, security, reliability, flexibility, lower costs and ease of use. Proxynet Communications further recognizes that solutions must take into account the "whole network infrastructure" and span connectivity across enterprise.                                
                                 </p>
-
+                                
                                 <p>
                                 In Proxynet Communications our Certified Technical Team bring to the fore Passion, Innovation, Concerned, and Definite qualities by: 
                                 </p>
@@ -115,50 +116,14 @@
                                         </li>
                                     </ol>
                                 </div>
+                                <a class="btn circle btn-theme border btn-sm" href="system-integration.php">Learn More <i class="ti-arrow-right"></i></a>
                                 
                             </div>
                         </div>
                         <!-- End Single Item -->
                         <!--Single Item-->
                         
-                        <div class="single-item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="img/networkent.jpg" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="ti-gallery"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">                                
-                                <h3>
-                                    <a href="#">Enterprise Networking</a>
-                                </h3>
-                                <p>
-                                Proxynet Communications designs, implements and supports Local area networks (LAN),Metropolitan area networks(MAN) and Wide area networks(WAN) focusing on delivering industry standards-based technologies that support the transition to higher-bandwidth networking. Also our Solutions strategy recognizes the need for solutions that address a number of key areas, including performance, manageability, productivity, speed, security, reliability, flexibility, lower costs and ease of use. Proxynet Communications further recognizes that solutions must take into account the "whole network infrastructure" and span connectivity across enterprise.                                
-                                </p>
-
-                                <p>
-                                In Proxynet Communications our Certified Technical Team bring to the fore Passion, Innovation, Concerned, and Definite qualities by: 
-                                </p>
-
-                                <div>
-                                    <ol>
-                                        <li>Delivering best-in-class, scalable connectivity solutions for evolving Networks. </li>
-                                        <li>
-                                        Provide solutions that meet the needs of users and businesses in communication environments as small as the home and as large as the enterprise 
-                                        </li>
-                                        <li>
-                                        Provide solutions for the new networking era as the view of the network shifts from an infrastructure focus to a business tool 
-                                        </li>
-                                        <li>
-                                        Deliver powerful, flexible enterprise solutions that help companies and endusers achieve an effective balance between performance and investment.
-                                        </li>
-                                    </ol>
-                                </div>
-                                
-                            </div>
-                        </div>
+                       
                         <!--End Single Item.-->
                         
                         <!-- Pagination -->
