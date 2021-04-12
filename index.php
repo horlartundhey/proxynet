@@ -18,7 +18,7 @@
             <div class="top-info">
                 <div class="row">
                     <div class="col-md-6 left-info">
-                        <h4>Welcome to Proxynet Communications</h4>
+                        <h4><?=translate("Welcome to Proxynet Communications")?></h4>
                         <h2><strong>16<span>+</span></strong></h2>
                         <h3>Years of experience in Challenging the status quo & thinking different.</h3>
                         <br><br>
