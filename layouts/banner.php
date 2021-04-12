@@ -4,7 +4,7 @@
         <div id="bootcarousel" class="carousel slide animate_text" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner inc-heading text-light">
-            <div class="item active bg-cover" style="background-image: url(img/fcmb.jpg);">
+            <div class="item active bg-cover" style="background-image: url(img/acce.jpg);">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(img/logitechvideo.jpg);">
+                <div class="item bg-cover" style="background-image: url(img/fcmb.jpg);">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -37,6 +37,26 @@
                                                 Connect wherever and whenever to maximize efficiency in your meetings with our solutions. 
                                             </p>
                                             <!-- <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-cover" style="background-image: url(img/logitech2.png);">
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <div class="content">
+                                            <h4 data-animation="animated fadeInDown">Proxynet | Logitech</h4>
+                                            <h1 data-animation="animated slideInLeft">Become A Logitech Reseller.<span></span></h1>
+                                            <p data-animation="animated slideInDown">
+                                            Proxynet Communication is an Authorised Distributor for Logitech West Africa, be part of this business by being a reseller from our distribution channel. 
+                                            </p>
+                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="https://resellers.casdnet.com" target="_blank">Register Now.<i class="fas fa-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(img/display.jpg);">
+                <div class="item bg-cover" style="background-image: url(img/screenst.jpg);">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -210,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(img/WhatsApp\ Image\ 2020-10-15\ at\ 2.39.11\ PM.jpeg);">
+                <div class="item bg-cover" style="background-image: url(img/scre.jpg);">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -222,7 +242,7 @@
                                             <p data-animation="animated slideInDown">
                                             Get an Overview of our LFD Solutions.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="#">Learn more <i class="fas fa-plus"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn circle btn-theme effect btn-md" href="https://drive.google.com/file/d/1cd0vKyO3R4EOsQe_iqEFkExY6NZy9ktc/view?usp=sharing" target="_blank">Download Now <i class="fas fa-download"></i></a>
                                         </div>
                                     </div>
                                 </div>

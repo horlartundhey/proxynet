@@ -1,0 +1,374 @@
+<?php require("layouts/header2.php");?>
+
+<!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark bg-fixed text-center text-light" style="background-image: url(img/services-1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h1>Gallery Grid</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li class="active">Gallery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Star Portfolio
+    ============================================= -->
+
+    <div class="portfolio-area default-padding">
+        <div class="container">
+            <div class="gallery-items-area text-center">
+                <div class="row">
+                    <div class="col-md-12 gallery-content">    
+                    <div class="site-heading text-center">
+                        <!-- <h4>Recent work</h4> -->
+                        <h2>Our Portfolio</h2>
+                        <span class="devider"></span>
+                    </div>
+                                        
+                        <!-- End Mixitup Nav-->
+                        <div class="row magnific-mix-gallery text-center masonary">
+<?php
+// Include the database configuration file
+include 'upladportfolio/config.php';
+
+// Get images from the database
+$query = $db->query("SELECT * FROM images ORDER BY uploaded_on DESC");
+
+?>
+                            <div id="portfolio-grid" class="gallery-items col-3">
+                                <!-- Single Item -->
+                                <?php if($query->num_rows > 0){
+                                    while($row = $query->fetch_assoc()){
+                                        $imageURL = 'upladportfolio/uploads/'.$row["file_name"];
+                                ?>
+                                <div class="pf-item development capital">
+                                    <div class="effect-box">
+                                    <img src="<?php echo $imageURL; ?>"  class="sizer"  alt="" />
+                                        <!-- <img src="assets/img/800x800.png" alt="thumb"> -->
+                                        <div class="info">                                            
+                                            <a href="<?php echo $imageURL; ?>" class="item popup-link"><i class="fa fa-search-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>     
+                                <?php }
+}else{ ?>
+    <p>No image(s) found...</p>
+<?php } ?>                            
+                                <!-- End Single Item -->                                  
+                            </div>                                         
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio -->
+<?php
+
+    require("layouts/footer.php");
+?>
+
+
+ <!-- <div class="row">
+                            
+                    <div class="col-md-12">
+                         <div class="services-items services-carousel owl-carousel owl-theme text-center" data-ride="carousel"> -->
+                        <!-- Single Itme -->
+                        <!-- <div class="item">
+                            <div class="thumb">
+                                <img src="img/Altech.gif" alt="Thumb" style="height:200px; width:400px;">                                
+                            </div>
+                            <div class="info">
+                            <br>
+                                <h4><strong>CLIENT: </strong> Altech West Africa</h4>
+                                <h5><strong>PROJECT: FireEye WebMPS</strong></h5>                                
+                                <p class="text-justify">
+                                The FireEye Web Malware Protection System (MPS) stops Web-based attacks that traditional and next-generation firewalls, IPS, Anti-Virus, and Web gateways miss. It protects against zero-day Web exploits and multi-protocol callbacks to keep sensitive data and systems safe. The FireEye Web Malware Protection System (MPS) provides the following benefits to secure the Altech WA network and their maintain the integrity of their operations.
+                                </p>                               
+                            </div>
+                        </div> -->
+                        <!-- Single Itme -->
+
+                        <!-- Single Itme -->
+                       
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <!-- <div class="item">
+                            <div class="thumb">
+                                <img src="img/net.jpg" alt="Thumb" style="height:200px; width:400px;">
+                                
+                            </div>
+                            <div class="info">
+                            <br>
+                            <h4><strong>CLIENT: </strong>NETCO, UAC</h4>
+                                <h5><strong>PROJECT: McAfee Security Solution</strong></h5>                                
+                                <p class="text-justify">
+                                McAfee offers the industry’s first open framework for integrating security technologies — Security Connected. Delivering
+                                real-time visibility and analytics, as well as a unique predictive capability enabled by McAfee Global Threat Intelligence,
+                                Security Connected allows you to balance Web 2.0 technology, virtualization, cloud computing, and the use of personal and
+                                mobile devices on your corporate network while protecting your critical assets and sensitive data.
+                                </p>
+                                
+                            </div>
+                        </div>                                                                     
+                    </div>
+                </div>
+            </div>   -->
+
+
+             <!-- <div class="item">
+                            <div class="thumb">
+                                <img src="img/bluess.png" alt="Thumb" style="height:200px; width:400px;">
+                                
+                            </div>
+                            <div class="info">
+                            <br>
+                            <h4><strong>CLIENT: </strong>Blueseas Maritime</h4>
+                                <h5><strong>PROJECT:</strong>Kerio Connect</h5>                                
+                                <p class="text-justify">
+                                Having cultivated a culture of excellence and  being a technology-driven business, the Client needed a cost effective email solution that works without hassles. Blueseas Maritime also needed a solution that can support a BYOD environment with ease and also make email administration easier.
+                                </p>                                
+                            </div>
+                        </div> -->
+
+                         <div class="row">
+                <div class="col-md-12">
+
+                    <div class="services-items services-carousel owl-carousel owl-theme text-center" data-ride="carousel">
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/Creamer_media.jpg" alt="Thumb" style="height:200px; width:400px;">                                
+                            </div>
+
+                            <div class="info">
+                            <br>
+                                <h4><strong>CLIENT: </strong> Blueseas Maritime </h4>
+                                <h5><strong>PROJECT: Kerio Connect</strong></h5>                                
+                                <p class="text-justify">
+                                Having cultivated a culture of excellence and  being a technology-driven business, the Client needed a cost effective email solution that works without hassles. Blueseas Maritime also needed a solution that can support a BYOD environment with ease and also make email administration easier.
+                                </p>                               
+                            </div>
+
+                        </div>
+                        <!-- Single Itme -->  
+
+                       
+                                               
+                    </div>
+                </div>
+            </div>  
+
+
+
+            <div class="col-md-12 gallery-content">                  
+                        <div class="site-heading text-center"> 
+                        <br>    <br>                                                                   
+                            <h2>Industries/Companies</h2>
+                            <span class="devider"></span>                                              
+                        </div>
+
+                        <div class="row magnific-mix-gallery text-center masonary">
+                            <div id="portfolio-grid" class="gallery-items col-3">
+                                <!-- Single Item -->
+                                <div class="pf-item nigeria capital">
+                                    <div class="thumb">
+                                        <a href="img/galler/companies/zino.jpg" class="item popup-link"><img src="img/galler/companies/zino.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>Zinox.</h3>
+                                                <p>
+                                                A 4 BY 2 VIDEO WALL. 
+                                                </p>                                 
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                        <a href="img/galler/companies/coca1.jpg" class="item popup-link"><img src="img/galler/companies/coca1.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>Coca Cola</h3>
+                                                <p>
+                                               A 3 BY 3 EXPEREINCE CENTER.
+                                                </p>                           
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting finance">
+                                <div class="thumb">
+                                        <a  href="img/galler/companies/data.jpeg" class="item popup-link"><img  src="img/galler/companies/data.jpeg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>DATASIXTH</h3>
+                                                <p>
+                                                 A 3 BY 2 DATASIXTH VIDEOWALL SCREEN.
+                                                </p>                                 
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item finance">
+                                <div class="thumb">
+                                        <a href="img/galler/companies/agro.jpeg" class="item popup-link"><img src="img/galler/companies/agro.jpeg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>Agromall </h3>
+                                                <p>
+                                               A 4 BY 2 VIDEOWALLSCREEN .
+                                                </p>                                 
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item capital development">
+                                    <div class="thumb">
+                                            <a href="img/galler/companies/ora.jpeg" class="item popup-link"><img src="img/galler/companies/ora.jpeg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                                <div class="info">
+                                                    <br>
+                                                    <h3>ORACLE</h3>
+                                                    <p>
+                                                    A 2 by 2 VIDEOWALL SCREEN.
+                                                    </p>                                 
+                                                </div>                                   
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                            <a href="img/galler/companies/ola.jpg" class="item popup-link"><img src="img/galler/companies/ola.jpg" alt="thumb"style="height:200px; width:400px;" ></a>                                       
+                                                <div class="info">
+                                                    <br>
+                                                    <h3>OLANIHAN AJANI</h3>
+                                                    <p>
+                                                    A 3 BY 3 BOARD ROOM VIDEO CONFERENCING SOLUTION.
+                                                    </p>                                 
+                                                </div>                                   
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                            <a href="img/galler/companies/soft.jpg" class="item popup-link"><img src="img/galler/companies/soft.jpg" alt="thumb"style="height:200px; width:400px;" ></a>                                       
+                                                <div class="info">
+                                                    <br>
+                                                    <h3>SOFTCOM</h3>
+                                                    <p>
+                                                    A 2 BY 2 VIDEO WALL SCREEN 
+                                                    </p>                                 
+                                                </div>                                   
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                            <a href="img/galler/companies/coca2.jpg" class="item popup-link"><img src="img/galler/companies/coca2.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                                <div class="info">
+                                                    <br>
+                                                    <h3>Coca Cola</h3>
+                                                    <p>
+                                                   Coca cola board room video conferencing screen and solutions  
+                                                    </p>                                 
+                                                </div>                                   
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                               
+                            </div>
+                        </div> 
+                                                                    
+                    </div>      
+
+                    <div class="row magnific-mix-gallery text-center masonary">
+                            <div id="portfolio-grid" class="gallery-items col-3">
+                                <!-- Single Item -->
+                                <div class="pf-item nigeria capital">
+                                    <div class="thumb">
+                                        <a href="img/galler/ghana/access.jpg" class="item popup-link"><img src="img/galler/ghana/access.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>Access Bank Ghana</h3>
+                                                <p>
+                                                A 3 BY 2 VIDEO WALL SCREEN.
+                                                </p>                                 
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                        <a href="img/galler/ghana/umb.jpg" class="item popup-link"><img src="img/galler/ghana/umb.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>UMB GHANA</h3>
+                                                <p>
+                                                UMB DIGITAL SCREEN: A Digital screen Mounted.  
+                                                </p>                           
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                
+                                
+                            </div>
+                        </div> 
+
+                        <div class="col-md-12 gallery-content">                                           
+                        <div class="site-heading text-center">                                                                     
+                            <h2>Hospitality</h2>
+                            <span class="devider"></span>                                              
+                        </div>
+
+                        <div class="row magnific-mix-gallery text-center masonary">
+                            <div id="portfolio-grid" class="gallery-items col-3">
+                                <!-- Single Item -->
+                                <div class="pf-item nigeria capital">
+                                    <div class="thumb">
+                                        <a href="img/galler/ghana/kumasi.jpg" class="item popup-link"><img src="img/galler/ghana/kumasi.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>Kumasi Mall Ghana</h3>
+                                                <p>
+                                                A 3 BY 3 VIDEO WALL SCREEN.
+                                                </p>                                 
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="pf-item consulting branding">
+                                    <div class="thumb">
+                                        <a href="img/galler/ghana/tele.jpg" class="item popup-link"><img src="img/galler/ghana/tele.jpg" alt="thumb" style="height:200px; width:400px;"></a>                                       
+                                            <div class="info">
+                                                <br>
+                                                <h3>TELEFONIKA</h3>
+                                                <p>
+                                                A 3 BY 3 VIDEO WALL SCREEN.
+                                                </p>                           
+                                            </div>                                    
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                
+                                
+                            </div>
+                        </div> 
+                                                                    
+                    </div>  

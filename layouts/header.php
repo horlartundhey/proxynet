@@ -36,7 +36,7 @@
 <body>
 
     <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
+    <!-- <div class="se-pre-con"></div> -->
     <!-- Preloader Ends -->
 
     <!-- Start Header Top 
@@ -44,11 +44,29 @@
     <div class="top-bar-area bg-dark one-line text-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-6 address-info">
+                <div class="col-md-12 col-sm-6 address-info">
                     <div class="info box">
+                        <div class="col-md-3">
                         <p>
                             <strong></strong> info@proxynetgroup.com 
                         </p>
+                        </div>
+                        
+                        <div class="col-md-3">
+                        <p>
+                            <strong>Nigeria:</strong> +234-7032647755. 
+                        </p> 
+                        </div >
+                        
+                        <div class="col-md-3">
+                        <p>
+                            <strong>Ghana:</strong> +233302546703
+                        </p>
+                        </div>  
+
+                        <p>
+                            <strong>Cote D'ivore:</strong> +22522468434
+                        </p>                        
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 social text-right">
@@ -86,10 +104,10 @@
     <header id="home">
 
         <!-- Start Navigation -->
-        <nav class="navbar navbar-default attr-border  bootsnav">
+        <nav class="navbar navbar-default navbar-sticky attr-border  bootsnav">
 
             <!-- Start Top Search -->
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="top-search">
                         <div class="input-group">
@@ -102,17 +120,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- End Top Search -->
 
             <div class="container">
 
                 <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
+                <!-- <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
-                </div>        
+                </div>         -->
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
@@ -150,15 +168,16 @@
                                 <li><a href="404.html">Error Page</a></li>
                             </ul> -->
                         </li>
-                        <li><a href="gallery.php">Gallery</a></li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+
+                        <li class="dropdown">
+                            <a href="gallery.php" class="dropdown-toggle" data-toggle="dropdown" >Gallery</a>
                             <ul class="dropdown-menu">
-                                <li><a href="services.html">Services Default</a></li>
-                                <li><a href="services-grid.html">Services Grid</a></li>
-                                <li><a href="services-carousel.html">Services Carousel</a></li>
-                            </ul> -->
+                                <li><a href="gallery.php">Nigeria</a></li>
+                                <li><a href="gallery_ghana.php">Ghana</a></li>
+                                <li><a href="gallery_cote.php">Cote_d'ivore</a></li>
+                            </ul>
                         </li>
+
                         <li class="">
                         <a href="solutions.php" class="">solutions</a>
                             <!-- <ul class="dropdown-menu">

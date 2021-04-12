@@ -195,52 +195,162 @@
     <div class="companies-area text-center">
         
         <div class="container">
-            <div class="companies-items default-padding">
-                <!-- Fixed BG -->
-                <div class="fixed-bg" style="background-image: url(img/map.svg);"></div>
-                <!-- Fixed BG -->
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                    <div class="site-heading text-center">                        
-                        <h2>Meet Our Partners.</h2>
-                        <span class="devider"></span>
-                    </div>
-                        <div class="item-list clients-carousel owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="img/Logitech.jpg" alt="Thumb">
+        <div class="services-area carousel-shadow full-thumb default-padding">
+        <!-- Shape BG -->
+        <div class="shape-bg" style="background-image: url(img/map.svg);"></div>
+        <!-- End Shape BG -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="site-heading text-center">
+                        <!-- <h4>Recent work</h4> -->
+                        <h2>Meet Our Partners</h2>                      
+                    <div class="services-items services-carousel owl-carousel owl-theme text-center">
+                        
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/Logitech.jpg" alt="Thumb" style="height: 200px;">                                
                             </div>
-                            <div class="item">
-                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb">
+                            <div class="info">
+                                <h4>Logitech</h4>                                
                             </div>
-                            <div class="item">
-                                <img src="img/cisco.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Fortinet_ha55ho.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/fireeye.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/kerio.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/dell.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/peerlessav.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/userful1.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/nesc.jpg" alt="Thumb">
-                            </div>
-
                         </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Samsung</h4>                                
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/cisco.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Cisco</h4>                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/logo_fortinet.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Fortinet</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/fired.jpg" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Fireeye</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/kerio.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Kerio</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/dell.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Dell</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/websen.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Websense</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/pas.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Paessler</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/mac.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>McAfee</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/peerlessav.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Peerless AV</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme --> <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/userful1.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Userful</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->                        
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/nesc.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Netscout</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
                     </div>
                 </div>
             </div>
+        </div>
+    </div> 
         </div>
     </div>
     <!-- End Companies Area -->

@@ -37,7 +37,7 @@
 <body>
 
     <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
+    <!-- <div class="se-pre-con"></div> -->
     <!-- Preloader Ends -->    
 
     <!-- Start Topbar 
@@ -79,7 +79,7 @@
         <nav class="navbar navbar-default navbar-sticky active-border logo-less attr-border bootsnav">
 
             <!-- Start Top Search -->
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="top-search">
                         <div class="input-group">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- End Top Search -->
 
             <div class="container">
@@ -141,15 +141,17 @@
                                 <li><a href="404.html">Error Page</a></li>
                             </ul> -->
                         </li>
-                        <li><a href="gallery.php">Gallery</a></li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+                        <!-- <li><a href="gallery.php">Gallery</a></li> -->
+
+                        <li class="dropdown">
+                            <a href="gallery.php" class="dropdown-toggle" data-toggle="dropdown" >Gallery</a>
                             <ul class="dropdown-menu">
-                                <li><a href="services.html">Services Default</a></li>
-                                <li><a href="services-grid.html">Services Grid</a></li>
-                                <li><a href="services-carousel.html">Services Carousel</a></li>
-                            </ul> -->
+                                <li><a href="gallery.php">Nigeria</a></li>
+                                <li><a href="gallery_ghana.php">Ghana</a></li>
+                                <li><a href="gallery_cote.php">Cote_d'ivore</a></li>
+                            </ul>
                         </li>
+                        
                         <li class="">
                             <a href="solutions.php" class="">solutions</a>
                             <!-- <ul class="dropdown-menu">

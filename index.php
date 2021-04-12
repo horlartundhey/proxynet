@@ -1,3 +1,4 @@
+<?php require('includes/config.php');?>
 <?php require("layouts/header.php");?>
 <?php require("layouts/banner.php");?>
     
@@ -32,7 +33,7 @@
                 </div>
             </div>
             <!-- End Top Info -->
-            <div class="bottom-info">
+            <!-- <div class="bottom-info">
                 <div class="row">
                     <div class="col-md-6 thumb">
                         <div class="thumb-img">
@@ -58,7 +59,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -238,7 +239,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
                         <h4></h4>
-                        <h2>Projects to clients.</h2>
+                        <h2>Some of Our Projects.</h2>
                         <span class="devider"></span>
                     </div>
                 </div>
@@ -318,20 +319,42 @@
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h4>Our Blog</h4>
+                        <h4>Blog</h4>
                         <h2>Latest News</h2>
                         <span class="devider"></span>
                     </div>
                 </div>
             <div class="row">
+            <?php
+try {
+    $pages = new Paginator('2','p');
+
+    $stmt = $db->query('SELECT postID FROM blog_posts_seo');
+
+    //pass number of records to
+    $pages->set_total($stmt->rowCount());
+
+    $stmt = $db->query('SELECT postID, postTitle, postSlug, postDesc, postDate, postImage FROM blog_posts_seo ORDER BY postID DESC '.$pages->get_limit());
+    while($row = $stmt->fetch()){
+        $stmt2 = $db->prepare('SELECT catTitle, catSlug	FROM blog_cats, blog_post_cats WHERE blog_cats.catID = blog_post_cats.catID AND blog_post_cats.postID = :postID');
+        $stmt2->execute(array(':postID' => $row['postID']));
+
+        $catRow = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+
+        $links = array();
+        foreach ($catRow as $cat)
+        {
+            $links[] = "<a href='c-".$cat['catSlug']."'>".$cat['catTitle']."</a>";
+        }
+        ?>
                 <div class="blog-items">
 
                     <!-- Stard Grid Item -->
                     <div class="grid-item col-md-6">
                         <div class="single-item">
                             <div class="thumb">
-                                <a href="#">
-                                    <img src="img/managed.jpg" alt="Thumb">
+                                <a href="<?php echo $row['postSlug']?>">
+                                    <img src="admin/<?php echo $row['postImage'] ;?>" style="height:500px;" alt="Thumb">
                                     <div class="post-type">
                                         <i class="ti-image"></i>
                                     </div>
@@ -341,263 +364,212 @@
                                 <div class="meta tags">
                                     <ul>
                                         <li>
-                                            <a href="#">assets</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Benefits</a>
-                                        </li>
+                                        <?php echo implode(" , " , $links);?>
+                                        </li>                                        
                                     </ul>
                                     <div class="date">
-                                        <i class="ti-calendar"></i> 22 Feb, 2020
+                                        <i class="ti-calendar"></i> <?php echo date('M j, Y',strtotime($row['postDate']));?>
                                     </div>
                                 </div>
                                 <h3>
-                                    <a href="#">Suitable settling mr attended no doubtful feelings attempted strangers</a>
+                                    <a href="<?php echo $row['postSlug']?>"><?php echo $row['postTitle'];?></a>
                                 </h3>
                                 <p>
-                                    Needed as or is enough points. Miles at smart no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving. 
+                                <?php echo substr($row['postDesc'], 0,80);?>.....
                                 </p>
-                                <a class="btn circle btn-theme border btn-sm" href="#">Learn More <i class="ti-arrow-right"></i></a>
+
+                                <a class="btn circle btn-theme border btn-sm" href="<?php echo $row['postSlug']?>">Read More
+                                <i class="ti-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <!-- End Grid Item -->
 
-                    <!-- Stard Grid Item -->
-                    <div class="grid-item col-md-6">
-                        <div class="single-item">
-                            <div class="info">
-                                <div class="meta tags">
-                                    <ul>
-                                        <li>
-                                            <a href="#">assets</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Benefits</a>
-                                        </li>
-                                    </ul>
-                                    <div class="date">
-                                        <i class="ti-calendar"></i> 18 Apr, 2020
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="#">Excellence put unaffected reasonable mrs introduced conviction</a>
-                                </h3>
-                                <p>
-                                    Needed as or is enough points. Miles at smart no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as. 
-                                </p>
-                                <a class="btn circle btn-theme border btn-sm" href="#">Learn More <i class="ti-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="info">
-                                <div class="meta tags">
-                                    <ul>
-                                        <li>
-                                            <a href="#">assets</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Benefits</a>
-                                        </li>
-                                    </ul>
-                                    <div class="date">
-                                        <i class="ti-calendar"></i> 19 Aug, 2020
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="#">Dissimilar admiration so terminated no in contrasted</a>
-                                </h3>
-                                <p>
-                                    Needed as or is enough points. Miles at smart no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as. 
-                                </p>
-                                <a class="btn circle btn-theme border btn-sm" href="#">Learn More <i class="ti-arrow-right"></i></a>
-                            </div>
-                        </div>
+                   
                     </div>
                     <!-- End Grid Item -->
+                    <?php
+                        }
+                    } catch(PDOException $e) {
+                        echo $e->getMessage();
+                    }
+                    ?>
 
                 </div>
-                <a class="btn btn-theme border btn-md" href="#">Read More News!</a>
+                <a class="btn btn-theme border btn-md" href="news.php">Read More News!</a>
             </div>
         </div>
     </div>
     <!-- End Blog -->
+
  <!-- Start Companies Area 
     ============================================= -->
     <div class="companies-area text-center">
         
+        <div class="container">       
+    <div class="services-area carousel-shadow full-thumb default-padding">
+        <!-- Shape BG -->
+        <div class="shape-bg" style="background-image: url(img/map.svg);"></div>
+        <!-- End Shape BG -->
         <div class="container">
-            <div class="companies-items default-padding">
-                <!-- Fixed BG -->
-                <div class="fixed-bg" style="background-image: url(img/map.svg);"></div>
-                <!-- Fixed BG -->
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                    <div class="site-heading text-center">                        
-                        <h2>Our Partners.</h2>
-                        <span class="devider"></span>
-                    </div>
-                        <div class="item-list clients-carousel owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="img/Logitech.jpg" alt="Thumb">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="site-heading text-center">
+                        <!-- <h4>Recent work</h4> -->
+                        <h4>Our Partners</h4>                      
+                    <div class="services-items services-carousel owl-carousel owl-theme text-center">
+                        
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/Logitech.jpg" alt="Thumb" style="height: 200px;">                                
                             </div>
-                            <div class="item">
-                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb">
+                            <div class="info">
+                                <h4>Logitech</h4>                                
                             </div>
-                            <div class="item">
-                                <img src="img/cisco.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Fortinet_ha55ho.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/fireeye.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/kerio.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/dell.png" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/peerlessav.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/userful1.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="img/nesc.jpg" alt="Thumb">
-                            </div>
-
                         </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="https://res.cloudinary.com/kamisama/image/upload/v1608296194/Samsung1_mgi1yc.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Samsung</h4>                                
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/cisco.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Cisco</h4>                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/logo_fortinet.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Fortinet</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/fired.jpg" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Fireeye</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/kerio.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Kerio</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/dell.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Dell</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/websen.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Websense</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/pas.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Paessler</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="img/mac.png" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>McAfee</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
+                         <!-- Single Itme -->
+
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/peerlessav.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Peerless AV</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme --> <!-- Single Itme -->
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/userful1.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Userful</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->                        
+                         <div class="item">
+                            <div class="thumb">
+                                <img src="img/nesc.jpg" alt="Thumb" style="height: 200px;">                                
+                            </div>
+                            <div class="info">
+                                <h4>Netscout</h4>
+                               
+                            </div>
+                        </div>
+                        <!-- Single Itme -->
                     </div>
                 </div>
             </div>
+        </div>
+    </div>            
         </div>
     </div>
     <!-- End Companies Area -->
 
     <!-- Star Portfolio
     ============================================= -->
-    <div class="portfolio-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <!-- <h4>Recent work</h4> -->
-                        <h2>Our Portfolio</h2>
-                        <span class="devider"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-items-area text-center">
-                <div class="row">
-                    <div class="col-md-12 gallery-content">
-                        <!-- <div class="mix-item-menu text-center">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".development">Development</button>
-                            <button data-filter=".consulting">Consulting</button>
-                            <button data-filter=".finance">Finance</button>
-                            <button data-filter=".branding">Branding</button>
-                            <button data-filter=".capital">Capital</button>
-                        </div>
-                        End Mixitup Nav -->
-
-                        <div class="row magnific-mix-gallery text-center masonary">
-                            <div id="portfolio-grid" class="gallery-items col-3">
-                                <!-- Single Item -->
-                                <div class="pf-item development capital">
-                                    <div class="effect-box">
-                                        <img src="img/sterling.jpeg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>2 by 2 screen Installed.</p>
-                                            </div>
-                                            <h4><a href="#">Sterling Bank.</a></h4>
-                                            <a href="img/sterling.jpeg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <img src="img/ecobankvideo.jpg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>A 4 BY 4 video wall</p>
-                                            </div>
-                                            <h4><a href="#">ECO BANK</a></h4>
-                                            <a href="img/ecobankvideo.jpg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting finance">
-                                    <div class="effect-box">
-                                        <img src="img/datasixth.jpeg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>A live cyber threat MAP at Datasixth</p>
-                                            </div>
-                                            <h4><a href="#">Datasixth</a></h4>
-                                            <a href="img/datasixth.jpeg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item finance">
-                                    <div class="effect-box">
-                                        <img src="img/Agromall.jpeg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>A 4 by 2 videowall</p>
-                                            </div>
-                                            <h4><a href="#">Agromall</a></h4>
-                                            <a href="img/Agromall.jpeg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item capital development">
-                                    <div class="effect-box">
-                                        <img src="img/niger.jpg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>A 5 by 3 video Wall</p>
-                                            </div>
-                                            <h4><a href="#">Nigeria Stock Exchange</a></h4>
-                                            <a href="img/niger.jpg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <img src="img/olani.jpg" alt="thumb">
-                                        <div class="info">
-                                            <div class="cats">
-                                                <p>3x3 board room video wall</p>
-                                            </div>
-                                            <!-- <h4><a href="#">Global Business</a></h4> -->
-                                            <a href="img/olani.jpg" class="item popup-link"><i class="fa fa-search-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Item -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        
-        </div>    
-            
-    </div>    
-    <!-- End Portfolio -->
+    
 <?php
     require("layouts/footer.php");

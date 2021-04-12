@@ -113,7 +113,19 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer-->
-
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/55893f8e1919b68c5c7fa480/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="js/jquery-1.12.4.min.js"></script>

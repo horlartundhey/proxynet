@@ -225,15 +225,17 @@
             # Services Carousel
          ===============================================*/
         $('.services-carousel').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 30,
             nav: false,
+            autoplayTimeout: 5000,
+            autoplay: true,
+            autoplayHoverPause:true,
             navText: [
                 "<i class='ti-arrow-left'></i>",
                 "<i class='ti-arrow-right'></i>"
             ],
-            dots: true,
-            autoplay: false,
+            dots: true,            
             responsive: {
                 0: {
                     items: 1
@@ -251,9 +253,12 @@
             # Clients Carousel
          ===============================================*/
         $('.clients-carousel').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 30,
-            nav: true,
+            nav: false,
+            autoplayTimeout: 6000,
+            autoplay: true,
+            autoplayHoverPause:true,
             navText: [
                 "<i class='fas fa-angle-left'></i>",
                 "<i class='fas fa-angle-right'></i>"
@@ -277,9 +282,12 @@
             # Team Carousel
          ===============================================*/
         $('.team-carousel').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 30,
             nav: false,
+            autoplayTimeout: 7000,
+            autoplay: true,
+            autoplayHoverPause:true,
             navText: [
                 "<i class='ti-angle-left'></i>",
                 "<i class='ti-angle-right'></i>"
