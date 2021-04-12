@@ -114,13 +114,14 @@ function translate($word){
 		$_SESSION['currency'] = $currency;
 	}
 	
-	$language = "french";
+	
 	include ("language/".$language."_lang.php");
 	if(isset($lang[$word])){
-		return $lang[$word];
+			return $lang[$word];
 	}else{
-		return $word;
-	}					
+			return $word;
+	}	
+	
 }
 
 ?>
