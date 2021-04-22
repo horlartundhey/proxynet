@@ -125,6 +125,9 @@
         s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
+	
+	
+	
     <!--End of Tawk.to Script-->
     <!-- jQuery Frameworks
     ============================================= -->
@@ -145,6 +148,26 @@
     <script src="js/bootsnav.js"></script>
     <script src="js/main.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	
+	<script type="text/javascript">
+
+			function doToggle(){
+					//var id = "lang-toggle";
+					var langChecked = $('#lang-toggle:checkbox:checked').length;
+					$.ajax({
+							url: 'includes/language/lanswitch.php',
+							type : 'POST',
+							async:true,
+							data : {lang:langChecked},
+							success: function(response)
+							{
+								if(response=="success"){
+									location.reload();
+								}									
+							}
+					});		
+			}
+	</script>
 
 </body>
 </html>

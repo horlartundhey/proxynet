@@ -31,6 +31,7 @@
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	
 
 </head>
 
@@ -214,7 +215,7 @@
                             <a href="contact.php">contact</a>
                         </li>
                         <li>
-                            <a href=""><input type="checkbox" checked data-toggle="toggle" data-on="En" data-off="Fr" data-onstyle="success" data-offstyle="danger"></a>
+                            <a href=""><input type="checkbox" id="lang-toggle" onchange="doToggle()" <?php if(isset($_SESSION['language']) && $_SESSION['language']=="english"){?> checked  data-on="En" data-off="Fr" <?php }else{ ?> checked  data-on="Fr" data-off="En" <?php } ?> data-toggle="toggle"  data-onstyle="success" data-offstyle="danger"></a>
                         </li>
                         
                     </ul>

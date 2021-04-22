@@ -1,5 +1,5 @@
 <?php
-$lang['WELCOME TO PROXYNET'] = "WELCOME TO PROXYNET COMMUNICATIONS";
+$lang['Welcome to Proxynet'] = "WELCOME TO PROXYNET COMMUNICATIONS";
 $lang['Years of experience'] = 'Years of experience in Challenging the status quo & thinking different.';
 $lang['shop_now'] = 'Shop Now';
 $lang['Logitech Rally for'] = 'Logitech Rally For Large Conference Rooms';
