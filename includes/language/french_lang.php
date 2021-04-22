@@ -1,6 +1,6 @@
 <?php
-$lang['Welcome to Proxynet Communications'] = "Bienvenue chez Proxynet Communications";
-$lang['welcome_message2'] = 'Obtenez la meilleure offre sur les prix de vos produits Logitech';
+$lang['Welcome to Proxynet'] = "BIENVENUE DANS PROXYNET COMMUNICATION";
+$lang['Years of experience'] = 'Des années dexpérience dans la contestation du statu quo et la pensée différente.';
 $lang['shop_now'] = 'Achetez maintenant';
 $lang['Logitech Rally for'] = 'Logitech Rally pour les grandes salles de conférence';
 $lang['logitech_group'] = 'Groupe Logitech';

@@ -1,4 +1,4 @@
-<?php require("includes/functions.php");?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +27,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet" />
   
-
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -47,10 +47,11 @@
             <div class="row">
                 <div class="col-md-12 col-sm-6 address-info">
                     <div class="info box">
-                        <div class="col-md-3">
+                        <div class="col-md-3">                        
                         <p>
                             <strong></strong> info@proxynetgroup.com 
                         </p>
+                        
                         </div>
                         
                         <div class="col-md-3">
@@ -76,22 +77,13 @@
                             <a href="#">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                        </li>
-                        <li class="twitter">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="pinterest">
-                            <a href="#">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                        </li>
+                        </li>                       
                         <li class="linkedin">
                             <a href="#">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
+                    
                     </ul>
                     <!-- <a href="#" class="button-default">Get Starterd</a> -->
                 </div>
@@ -221,7 +213,12 @@
                         <li>
                             <a href="contact.php">contact</a>
                         </li>
+                        <li>
+                            <a href=""><input type="checkbox" checked data-toggle="toggle" data-on="En" data-off="Fr" data-onstyle="success" data-offstyle="danger"></a>
+                        </li>
+                        
                     </ul>
+                    
                 </div><!-- /.navbar-collapse -->
             </div>
 

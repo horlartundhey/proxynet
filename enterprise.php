@@ -1,3 +1,4 @@
+<?php require('includes/config.php');?>
 <?php require('layouts/header2.php');?>
 
 <!-- Start Breadcrumb 

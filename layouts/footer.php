@@ -144,6 +144,7 @@
     <script src="js/circle-progress.js"></script>
     <script src="js/bootsnav.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
 </body>
 </html>

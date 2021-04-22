@@ -26,6 +26,7 @@
     <link href="css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   
 
     <!-- ========== Google Fonts ========== -->
@@ -54,7 +55,9 @@
                 <div class="col-md-9 address-info text-right">
                     <div class="info box">
                         <ul>
-                            
+                        <li>
+                            <a href=""><input type="checkbox" checked data-toggle="toggle" data-on="En" data-off="Fr" data-onstyle="success" data-offstyle="danger"></a>
+                        </li>
                             <li>
                                 <div class="icon">
                                     <i class="ti-email"></i>
@@ -195,6 +198,7 @@
                         <li>
                             <a href="contact.php">contact</a>
                         </li>
+                      
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>

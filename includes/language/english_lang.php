@@ -1,6 +1,6 @@
 <?php
-$lang['welcome_message'] = "Welcome To PromallShop";
-$lang['welcome_message2'] = 'Get The Best Offer On Prices For Your Logitech Products';
+$lang['WELCOME TO PROXYNET'] = "WELCOME TO PROXYNET COMMUNICATIONS";
+$lang['Years of experience'] = 'Years of experience in Challenging the status quo & thinking different.';
 $lang['shop_now'] = 'Shop Now';
 $lang['Logitech Rally for'] = 'Logitech Rally For Large Conference Rooms';
 $lang['logitech_group'] = 'Logitech Group';
