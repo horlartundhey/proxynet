@@ -55,8 +55,8 @@
                 <div class="col-md-9 address-info text-right">
                     <div class="info box">
                         <ul>
-                        <li>
-                            <a href=""><input type="checkbox" checked data-toggle="toggle" data-on="En" data-off="Fr" data-onstyle="success" data-offstyle="danger"></a>
+                         <li>
+                            <a href=""><input type="checkbox" id="lang-toggle" onchange="doToggle()" <?php if(isset($_SESSION['language']) && $_SESSION['language']=="english"){?> checked  data-on="En" data-off="Fr" <?php }else{ ?> checked  data-on="Fr" data-off="En" <?php } ?> data-toggle="toggle"  data-onstyle="success" data-offstyle="danger"></a>
                         </li>
                             <li>
                                 <div class="icon">
